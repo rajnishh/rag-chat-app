@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  rag-chat-frontend:
+    build: .
+    ports:
+      - "3000:80"
+    environment:
+      - REACT_APP_API_BASE_URL=http://localhost:8080/ragchat
+      - REACT_APP_API_KEY=${FRONTEND_API_KEY}
+    restart: unless-stopped
+    networks:
+      - rag-chat-network
+
+networks:
+  rag-chat-network:
+    external: true
