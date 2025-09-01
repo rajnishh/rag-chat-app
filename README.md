@@ -1,4 +1,4 @@
-# RAG Chat Frontend
+# RAG Chat App
 
 A React-based frontend application for the RAG (Retrieval-Augmented Generation) Chat system.
 
@@ -42,7 +42,7 @@ src/
 1. Clone the repository
 ```bash
 git clone <repository-url>
-cd rag-chat-frontend
+cd rag-chat-app
 ```
 
 2. Install dependencies
@@ -52,7 +52,7 @@ npm install
 
 3. Set up environment variables
 ```bash
-cp .env.example .env.local
+cp env.txt .env.local
 ```
 
 4. Start the development server
